@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Feature.Teaser</RootNamespace>
+    <AssemblyName>Feature.Teaser</AssemblyName>
+    <SitecoreRoleType>code</SitecoreRoleType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="App_Config\Include\Feature\Feature.Teaser\Feature.Teaser.config" />
+    <None Remove="Views\TeaserComponent\TeaserComponent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.Teaser\Feature.Teaser.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SupportsSystemWeb" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
+    <PackageReference Include="Sitecore.Kernel" Version="9.3.0" />
+    <PackageReference Include="Sitecore.Mvc" Version="9.3.0" />
+    <PackageReference Include="Sitecore.Mvc.Analytics" Version="9.3.0" />
+    <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="9.3.0" />
+  </ItemGroup>
+</Project>
